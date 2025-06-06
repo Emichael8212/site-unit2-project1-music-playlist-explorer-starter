@@ -3,23 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Music Playlist Explorer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+    <script src="https://kit.fontawesome.com/3786cf8395.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <!-- Your header content here -->
+        <h1>Music Playlist Explorer</h1>
+        <div class="btns">
+            <p class="react-btn"><a href="featured.html">Featured</a></p>
+            <p class="react-btn"><a href="index.html">All</a></p>
+        </div>
+
     </header>
 
-    <main> 
-        <!-- Your main content here -->
+    <main>
+        <section class="playlist-cards">
+
+        </section>
     </main>
 
+    <div id="show-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div id="music-fst">
+                <div class="general">
+                    <div class="music-pop">
+                        <img class="modal-image" src="/site-unit2-project1-music-playlist-explorer-starter/music-playlist-creator/assets/img/playlist.png" alt="">
+                    </div>
+                    <div class="music-textpop">
+                        <div class="playlistName"><h2>Music Name</h2></div>
+                        <div class="playlist-creator"><h3>Creator</h3></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="shuffle-Btn">Shuffle</button>
+
+            <div class="shuffle-content">
+                
+            </div>
+        </div>
+    </div>
+
+
     <footer>
-        <!-- Your footer content here -->
+        <p>
+            Copyright ©️ 2025 metaprojarvis Music-playlist Explorer
+        </p>
     </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>

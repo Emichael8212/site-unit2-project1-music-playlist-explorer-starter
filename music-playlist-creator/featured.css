@@ -1,0 +1,128 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header h1 {
+    padding: 67px;
+}
+
+.btns {
+    padding-right: 3pc;
+    background-color: none;
+    display: flex;
+    gap: 2pc;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header {
+    background-color: darkgrey;
+    margin-top: 0;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    position: fixed;
+    background-color:darkgray;
+    left: 0;
+    width: 200pc;
+    padding-bottom: 0%;
+    bottom: 0%;
+}
+
+.featuredCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.feature-image {
+    width: 300px;
+    height: 300px;
+}
+
+.feature-text {
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    border-radius: 1pc;
+}
+
+#pad-header {
+    padding-left: 2px;
+    margin-left: 2px;
+}
+
+.modal-image {
+    width: 400px;
+    height: 300px;
+    border-radius: 1pc;
+}
+
+.shuffle-content {
+    border: #888;
+    /* background-color: rgb(130, 4, 4); */
+
+    margin-bottom: 22px;
+    padding: 1pc;
+    color: #e7e2e2;
+    border-radius: 1pc;
+}
+
+.music-textpop {
+    list-style: none;
+}
+
+.general {
+    display: flex;
+    gap: 2pc;
+}
+
+.holder {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+
+}
+
+.hold {
+    border-bottom: 1px;
+    margin-bottom: 20px;
+    color: black
+
+}
+
+
+.duration {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+.together {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
