@@ -5,6 +5,9 @@ body {
     background-color: #f8f8f8;
 }
 
+.react-btn {
+    text-decoration: none;
+}
 .header h1 {
     padding: 67px;
 }
@@ -88,7 +91,7 @@ footer {
     cursor: pointer;
 }
 .liked {
-    color: red;
+    color: rgb(0, 255, 200);
 }
 
 .modal-overlay {
@@ -105,10 +108,10 @@ footer {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
+    width: 60%; 
     border-radius: 1pc;
 }
 
@@ -125,7 +128,7 @@ footer {
 
 .shuffle-content {
     border: #888;
-    /* background-color: rgb(130, 4, 4); */
+    
 
     margin-bottom: 22px;
     padding: 1pc;
@@ -172,6 +175,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 23px;
+    
 
 }
 
@@ -190,7 +194,20 @@ footer {
     align-self: center;
 }
 
+.delete-icon {
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+.delete-icon:hover {
+    color: #c0392b;
+}
+
 
 #likeWalker {
-    width: 100px;
+    width: 20px;
+}
+.modal-overlook {
+    margin-bottom: 10px;
 }

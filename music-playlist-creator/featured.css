@@ -5,10 +5,6 @@ body {
     background-color: #f8f8f8;
 }
 
-header h1 {
-    padding: 67px;
-}
-
 .btns {
     padding-right: 3pc;
     background-color: none;
@@ -22,7 +18,7 @@ header h1 {
 header {
     background-color: darkgrey;
     margin-top: 0;
-    padding-top: 1%;
+    padding: 1%;
     display: flex;
     justify-content: space-between;
 }
@@ -48,11 +44,18 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: rgb(130, 4, 4);
+    
+}
+
+.img-text {
+    padding: 54px;
 }
 
 .feature-image {
     width: 300px;
     height: 300px;
+    
 }
 
 .feature-text {
@@ -61,10 +64,10 @@ footer {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
+    width: 60%; 
     border-radius: 1pc;
 }
 
@@ -81,7 +84,6 @@ footer {
 
 .shuffle-content {
     border: #888;
-    /* background-color: rgb(130, 4, 4); */
 
     margin-bottom: 22px;
     padding: 1pc;
@@ -102,13 +104,14 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 23px;
-
+    
 }
 
 .hold {
     border-bottom: 1px;
     margin-bottom: 20px;
-    color: black
+    background-color: rgb(130, 4, 4);
+    gap: 5px;
 
 }
 
@@ -123,6 +126,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 3px;
+
 }
 
+.shuffle-content {
+    background-color: rgb(130, 4, 4);
+    margin-top: 50px;
+    gap: 5px;
+    border-bottom: 1px;
+    margin-bottom: 20px;
+    outline: 2px solid green;
+}

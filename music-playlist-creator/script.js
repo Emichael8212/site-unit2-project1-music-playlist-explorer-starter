@@ -9,14 +9,27 @@ data.map(item => {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
-        <img src=${item['playlist_photo']} alt="imanmetame" class="playlist-image">
+        <img src="${item['playlist_photo']}" alt="imanmetame" class="playlist-image">
         <h2 class="playlist-title">${item['playlist_name']}</h2>
-        <h3 class="'creator-name">${item['playlist_author']}</h3>
-        <div class="modal-overlook">
-            <i class="fa-regular fa-heart" id="likeWalker"></i> <span class="likeCounter">${item['like-count']}</span>
+        <h3 class="creator-name">${item['playlist_author']}</h3>
+        <div class="modal-overlook" style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <i class="fa-regular fa-heart" id="likeWalker"></i> 
+                <span class="likeCounter">${item['like-count']}</span>
+            </div>
+            <i class="fa-regular fa-trash-can delete-icon" title="Delete Playlist" class="delete-icon"></i>
         </div>
     `;
+    
+    
     cardContainer.appendChild(card);
+
+
+    const deleteIcon = card.querySelector('.delete-icon');
+    deleteIcon.addEventListener('click', (e) => {
+        e.stopPropagation();  
+        card.remove();        
+    });
 });
 
 const modalLookout = document.querySelectorAll('.card');
@@ -24,10 +37,10 @@ const overlayHidden = document.querySelector('.modal-overlay');
 
 modalLookout.forEach((card, index) => {
     card.addEventListener('click', function(e) {
-        // const overlayImage = document.querySelector('.modal-image');
-        // const overlayPlayName = document.querySelector('.playlistName');
-        // const overlayPlayCreator = document.querySelector('.playlist-creator');
-        // const shuffleContainer = document.querySelector('.shuffle-content');
+        const overlayImage = document.querySelector('.modal-image');
+        const overlayPlayName = document.querySelector('.playlistName');
+        const overlayPlayCreator = document.querySelector('.playlist-creator');
+        const shuffleContainer = document.querySelector('.shuffle-content');
 
         const playlistData = data[index];
         if (!playlistData) return;
@@ -61,7 +74,7 @@ modalLookout.forEach((card, index) => {
 
         overlayHidden.style.display = 'block';
 
-        // Move the shuffle button event listener outside the card click event
+        
         const shuffleButton = document.querySelector('.shuffle-Btn');
         shuffleButton.addEventListener('click', () => {
             const songs = Array.from(shuffleContainer.children);
